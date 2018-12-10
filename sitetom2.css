@@ -1,0 +1,101 @@
+	/* modifications récurentes sur toutes les pages */
+
+body {
+	background-color: lightgrey;
+}
+
+header {
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 3px 4px 10px green, 4px 5px 12px lightgrey;
+	letter-spacing: 4px;
+	background-color: black;
+	margin-bottom: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none;
+	box-shadow: -1px -2px 4px green, -2px -3px 6px darkgrey, 1px 2px 4px green, 2px 3px 6px darkgrey;
+}
+
+
+	/* bandeau de navigation page d'accueil, sections de présentation de l'activité de l'entreprise. */
+
+#accueil {
+	background-color: black;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.présentation > section {
+	padding: 20px;
+	box-shadow: inset 5px 5px 20px rgba(250, 250, 250, 0.5), inset -5px -5px 20px rgba(250, 250, 250, 0.5);
+}
+
+	/* apparence des liens */
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: 'Orbitron', sans-serif;
+	text-shadow: 3px 4px 10px green, 4px 5px 12px lightgrey;
+}
+
+a:hover {
+	color: #00B300;
+}
+
+ 	/*apparence du contact mail */
+
+.mailcontact {
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 8px;
+    background-color: black;
+}
+
+	/* en tête des articles divisant les pages */
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: black;
+	text-align: left;
+	text-indent: 5%;
+	text-shadow: 3px 4px 10px green, 4px 5px 12px lightgrey;
+	letter-spacing: 4px;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none;
+}
+
+	/* articles flex-container pour la disvision des pages en sections (adapté a partir de la page "informatique") */
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.flex-container > section {
+	flex-grow: 6;
+	background: white;
+	padding: 10px;
+}
+
+	/* paramètres de la section de navigation or bandeau page d'accueil */
+
+.flex-container > nav {
+	flex-grow: 1;
+	background: darkgrey;
+	line-height: 1.8;
+	padding: 10px;
+	max-width: 170px;
+}
+
+
